@@ -9,3 +9,5 @@ userName = "Fazle Bari"
 // How to know data type
 console.log( typeof result )
 console.log( typeof userName )
+
+var namrs = "ddd";
