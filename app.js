@@ -10,4 +10,16 @@ const person = {
 
 console.log(person.fullName);
 
-document.getElementById("hi").innerHTML = person.fullName();
+//document.getElementById("hi").innerHTML = person;
+
+function personInfo(){
+    document.getElementById("hello").innerHTML = person.fullName();
+}
+
+personInfo()
+
+function checkLength(el) {
+    if (el.value.length != 4) {
+      alert("length must be exactly 4 number")
+    }
+  }
