@@ -1,30 +1,33 @@
-document.getElementById('hello').innerHTML = 'I am a man!';
-document.getElementById('hi').innerHTML = 'Cool!';
-document.getElementById('hi').style.color = 'red';
+$(document).ready(function(){
 
-document.getElementById('water').style.width = '500px';
-document.getElementById('water').style.height = '250px';
+    /*
+    $('button').click(function(){
+        $('*').hide();
+    })
 
-// Function
+    $("button").click(function(){
+        $(this).hide();
+    })
 
-//let myName ='Sony';
 
+    $("button").click(function(){
+        $("p.para").hide();
+    })
 
+    $("button").click(function(){
+        $("p:first").hide();
+    })
 
-function newMe( myName ){
-    console.log( 'His name is ' + myName.name + ' He is ' + myName.age +' Years old' + ' And He is from ' + myName.vill);
-}
+    $("button").click(function(){
+        $("ul li:first").hide();
+    })
 
-const person1 = {
-    'name' : 'sony',
-    'age' : 23,
-    'vill' : 'Shihata'
-}
-const person2 = {
-    'name' : 'Rony',
-    'age' : 27,
-    'vill' : 'Dhaka'
-}
+    $("button").click(function(){
+        $("ul li:first-child").hide();
+    })
+    */
+    $("button").click(function(){
+        $("#wrap a[target='_blank']").hide();
+    })
 
-newMe(person1);
-newMe(person2);
+})
