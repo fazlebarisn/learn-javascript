@@ -25,9 +25,17 @@ $(document).ready(function(){
     $("button").click(function(){
         $("ul li:first-child").hide();
     })
-    */
+    
     $("button").click(function(){
         $("#wrap a[target='_blank']").hide();
+    })
+
+    $("button").dblclick(function(){
+        $(".hi").hide();
+    })
+        */
+    $("button").dblclick(function(){
+        $(".hello").hide();
     })
 
 })
