@@ -2,10 +2,7 @@
     border: 1px solid #000;
     /* background: pink; */
     padding: 10px;
-}
-
-#extra{
-    background-color: powderblue;
-    border: 1px solid red;
-    margin-top: 20px;
+    width: 30%;
+    height: 200px;
+    overflow: auto;
 }
