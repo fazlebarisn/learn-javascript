@@ -1,23 +1,15 @@
 $(document).ready(function(){
 
-    $("#box").click(function(){
-        $(this).css("background-color" , "green");
-    })
-
-    $("#box").dblclick(function(){
+    $("body").keypress(function(){
         $(this).css("background-color" , "orange");
-    })
+    });
 
-    $("#box").contextmenu(function(){
-        $(this).css("background-color" , "blue");
-    })
+    $("body").keyup(function(){
+        $(this).css("background-color" , "green");
+    });
 
-    $("#box").mouseenter(function(){
-        $(this).css("background-color" , "tan");
-    })
-
-    $("#box").mouseleave(function(){
-        $(this).css("background-color" , "purple");
-    })
+    $("body").keydown(function(){
+        $(this).css("background-color" , "pink");
+    });
 
 });
