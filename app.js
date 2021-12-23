@@ -1,15 +1,26 @@
 $(document).ready(function(){
 
-    $("body").keypress(function(){
-        $(this).css("background-color" , "orange");
+    $("#sname,#sclass,#country").focus(function(){
+        $(this).css("background-color" , "lime");
     });
 
-    $("body").keyup(function(){
-        $(this).css("background-color" , "green");
+    $("#sname,#sclass,#country").blur(function(){
+        $(this).css("background-color" , "");
     });
 
-    $("body").keydown(function(){
-        $(this).css("background-color" , "pink");
+    $("#sname,#sclass").select(function(){
+        $(this).css("background-color" , "red");
+    });
+
+    $("#country").change(function(){
+        //$(this).css("background-color" , "pink");
+        var countryName = $(this).val();
+        console.log(countryName);
+        $("#extra").html(countryName)
+    });
+
+    $("#sform").submit(function(){
+        alert("Form Submited");
     });
 
 });
