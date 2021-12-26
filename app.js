@@ -1,12 +1,20 @@
 $(document).ready(function(){
 
-  $('#wrapBtn').click(function(){
+  $('#widthBtn').click(function(){
 
-    $('#box p').wrap('<div class="tan"></div>');
+    var divWidth = $('#box').width();
+    var divInnerWidth = $('#box').innerWidth();
+    var divOuterWidth = $('#box').outerWidth();
+    var divOuterWidthTrue = $('#box').outerWidth(true);
+
+    console.log( "width : " + divWidth );
+    console.log( "innerWidth : " + divInnerWidth );
+    console.log( "outerwidth : " + divOuterWidth );
+    console.log( "outerwidth : " + divOuterWidthTrue );
 
   })
 
-  $('#unWrapBtn').click(function(){
+  $('#heightBtn').click(function(){
 
     $('#box p').unwrap();
 
