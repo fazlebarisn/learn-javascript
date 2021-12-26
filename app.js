@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-  $('#append').click(function(){
-    $('ol').append('<li>New Item</li>');
+  $('#beforeBtn').click(function(){
+    $('#box').before('<h2>New Item</h2>');
   })
 
-  $('#prepend').click(function(){
-    $('ol').prepend('<li> Brand New Item</li>');
+  $('#afterBtn').click(function(){
+    $('#box').after('<h3> Brand New Item</h3>');
   })
 
 });
