@@ -1,30 +1,11 @@
 $(document).ready(function(){
 
-  // $('#box').on("mouseover mouseout" , function(){
-  //   $(this).toggleClass("tan");
-  // })
-
-
-  // Add many event at a same time
-  $("#box").on({
-
-    "click" : function(){
-      $(this).css("background" , "tan");
-    },
-
-    "mouseover" : function(){
-      $(this).css({"background" : "black" , "color" : "#fff"});
-    },
-
-    "mouseout" : function(){
-      $(this).css("background" , "red");
-    }
-
+  $('#append').click(function(){
+    $('ol').append('<li>New Item</li>');
   })
 
-  // Remove event
-  $('button').click(function(){
-    $('#box').off('mouseover mouseout');
+  $('#prepend').click(function(){
+    $('ol').prepend('<li> Brand New Item</li>');
   })
 
 });
