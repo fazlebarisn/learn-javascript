@@ -1,15 +1,12 @@
 $(document).ready(function(){
 
-  $('#addClass').click(function(){
-    $('#box').addClass("tan");
-  });
+  $('#addStyle').click(function(){
 
-  $('#removeClass').click(function(){
-    $('#box').removeClass("tan");
-  });
+    $('#box').css("background" ," tan");
 
-  $('#toggleClass').click(function(){
-    $('#box').toggleClass("tan");
+    // multipul value
+    $('#box').css({"background" : " tan" , "color" : "red"});
+
   });
 
 });
