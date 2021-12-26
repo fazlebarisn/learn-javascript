@@ -1,19 +1,14 @@
 $(document).ready(function(){
 
-  $('#appendToBtn').click(function(){
+  $('#wrapBtn').click(function(){
 
-    $('<h3>Append To : Hello There!</h3>').appendTo('#box');
+    $('#box p').wrap('<div class="tan"></div>');
 
-    // sama thing we can do with 'append' 
-    //$('#box').append('<h3>Append To : Hello There!</h3>');
   })
 
-  $('#prependToBtn').click(function(){
+  $('#unWrapBtn').click(function(){
 
-    $('<h3>Prepend To : Hy There!</h3>').prependTo('#box');
-
-    // sama thing we can do with 'prepend' 
-    //$('#box').prepend('<h3>Append To : Hello There!</h3>');
+    $('#box p').unwrap();
 
   })
 
