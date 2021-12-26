@@ -1,11 +1,20 @@
 $(document).ready(function(){
 
-  $('#emptyBtn').click(function(){
-    $('#box').empty();
+  $('#appendToBtn').click(function(){
+
+    $('<h3>Append To : Hello There!</h3>').appendTo('#box');
+
+    // sama thing we can do with 'append' 
+    //$('#box').append('<h3>Append To : Hello There!</h3>');
   })
 
-  $('#removeBtn').click(function(){
-    $('#box h1').remove();
+  $('#prependToBtn').click(function(){
+
+    $('<h3>Prepend To : Hy There!</h3>').prependTo('#box');
+
+    // sama thing we can do with 'prepend' 
+    //$('#box').prepend('<h3>Append To : Hello There!</h3>');
+
   })
 
 });
