@@ -1,9 +1,14 @@
 $(document).ready(function(){
 
-  $('#cloneBtn').click(function(){
+  $('#replaceBtn').click(function(){
 
-    $("#box h1").clone().prependTo("#box2");
-    $("#box p").clone().appendTo("#box2");
+    //$("#box p:first").replaceWith("<h3>Hello There</h3>");
+
+    ///$("#box p:nth-child(3").replaceWith("<h3>Hello There</h3>");
+
+
+    $("<h3>Hello There</h3>").replaceAll("#box p");
+
   })
 
 
