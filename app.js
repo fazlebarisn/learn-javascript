@@ -1,20 +1,10 @@
 $(document).ready(function(){
 
-  $('#appendToBtn').click(function(){
+  $('#cloneBtn').click(function(){
 
-    $('<h3>Append To : Hello There!</h3>').appendTo('#box');
-
-    // sama thing we can do with 'append' 
-    //$('#box').append('<h3>Append To : Hello There!</h3>');
+    $("#box h1").clone().prependTo("#box2");
+    $("#box p").clone().appendTo("#box2");
   })
 
-  $('#prependToBtn').click(function(){
-
-    $('<h3>Prepend To : Hy There!</h3>').prependTo('#box');
-
-    // sama thing we can do with 'prepend' 
-    //$('#box').prepend('<h3>Append To : Hello There!</h3>');
-
-  })
 
 });
