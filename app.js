@@ -1,37 +1,33 @@
 $(document).ready(function(){
 
-  $('#widthBtn').click(function(){
+  $('#positionBtn').click(function(){
 
-    // check width
-    var Width = $('#box p').width();
-    var InnerWidth = $('#box p').innerWidth();
-    var OuterWidth = $('#box p').outerWidth();
-    var OuterWidthTrue = $('#box p').outerWidth(true);
+    // check Position
+    //var position = $('#box').position();
+    var position = $('#box h1').position();
 
-    console.log( "width : " + Width );
-    console.log( "innerWidth : " + InnerWidth );
-    console.log( "outerwidth : " + OuterWidth );
-    console.log( "outerwidth : " + OuterWidthTrue );
+    //console.log(position);
 
-    // Also can set width
-    $('#box').width('200px');
+    console.log(position.left); // will dispaly left value
+    console.log(position.top); // will display topo value
 
   })
 
-  $('#heightBtn').click(function(){
+  $('#offsetBtn').click(function(){
 
-    var Height = $('#box').height();
-    var InnerHeight = $('#box').innerHeight();
-    var OuterHeight = $('#box').outerHeight();
-    var OuterHeightTrue = $('#box').outerHeight(true);
+    //var offset = $('#box').offset();
+    var offset = $('#box h1').offset();
 
-    console.log( "Height : " + Height );
-    console.log( "InnerHeight : " + InnerHeight );
-    console.log( "OuterHeight : " + OuterHeight );
-    console.log( "OuterHeightTrue : " + OuterHeightTrue );
+    console.log(offset);
 
-    // Also can set height
-    $('#box').height('700px');
+    console.log(offset.left); // will dispaly left value
+    console.log(offset.top); // will display topo value
+
+    // Also can set offset vallue
+    $('#box').offset({
+      top:0,
+      left:0
+    });
 
   })
 
