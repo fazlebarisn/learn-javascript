@@ -1,25 +1,21 @@
 $(document).ready(function(){
 
-  // Slide  
-  $('#animate').click(function(){
+  // Animation   
+  $('#animateBtn').click(function(){
 
-    /*
-    $('#box').animate({
+    $('#box').animate({left : '250px'}, 3000);
+    $('#box').animate({fontSize : '25px'} , 2000);
 
-      left : '150px',
-      width : '+=300px', // or '300px' or 'toggle' or 'hide' or 'show'
-      fontSize : '25px',
-      borderWidth : '5px'
+  });
 
-    });
-    */
+  // Stop Animation   
+  $('#stopBtn').click(function(){
 
-    $('#box').animate({left : '150px'});
-    $('#box').animate({top : '150px' , fontSize : '25px'});
+    //$('#box').stop(); 
 
-    $('#box').animate({width : '350px'} , 3000, function(){
-      console.log('done');
-    });
+    //$('#box').stop( true ); // If want to stop all animation
+
+    $('#box').stop( true , true ); // If want to stop all animation and jump at the end 
 
   });
 
