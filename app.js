@@ -1,11 +1,17 @@
 $(document).ready(function(){
 
-  // children selector   
-  //$('#inner').children().css('background' , 'red' );
-  //$('#outer').children().css('background' , 'red' ); 
-  //$('#inner').children('#child-c').css('background' , 'red' ); 
+  // siblings selector   
+  //$('#child-c').siblings().css('background' , 'red' );
+  //$('#child-c').siblings('h2').css('background' , 'red' );
 
-  // find selector   
-  $('#main-outer').find('.test').css('background' , 'red' ); 
+  // next selector   
+  //$('#child-c').next().css('background' , 'red' ); 
+  //$('#child-c').nextAll().css('background' , 'red' ); 
+  //$('#child-c').nextUntil('.testy').css('background' , 'red' );
+
+  // prev selector   
+  //$('#child-c').prev().css('background' , 'red' ); 
+  //$('#child-c').prevAll().css('background' , 'red' ); 
+  $('#child-c').prevUntil('test').css('background' , 'red' ); 
 
 });
