@@ -1,48 +1,35 @@
 $(document).ready(function(){
 
-  // fadeIn heading 
-  $('#fadeInBtn').click(function(){
+  // Slide  
+  $('#slideUpBtn').click(function(){
 
-    //$('#box h1').fadeIn();
-    //$('#box h1').fadeIn('slow');
-    //$('#box h1').fadeIn(2000);
+    //$('#box').slideUp();
+    //$('#box').slideUp('slow');
+    //$('#box').slideUp(2000);
 
-    $('#box h1').fadeIn(2000 , function(){
-      console.log('Fade In');
+    $('#box').slideUp(2000 , function(){
+      console.log('slide Up');
     });
 
   });
 
-  // FadeOut heading
-  $('#fadeOutBtn').click(function(){
+  // FadeOut 
+  $('#slideDownBtn').click(function(){
 
-    //$('#box h1').fadeOut();
-    //$('#box h1').fadeOut('slow');
-    //$('#box h1').fadeOut(2000);
+    $('#box').slideDown();
+    //$('#box h1').slideDown('slow');
+    //$('#box h1').slideDown(2000);
 
-    $('#box h1').fadeOut(2000 , function(){
-      console.log('Fade Out');
-    });
-
-  });
-
-  // Toggle heading
-  $('#fadeToggleBtn').click(function(){
-
-    $('#box h1').fadeToggle();
+    // $('#box h1').slideDown(2000 , function(){
+    //   console.log('slide Down');
+    // });
 
   });
 
-  // Fade to
-  // $(selector).fadeTo( speed, opacity, callback ) fadeToBtn
+  // Slide Toggle 
+  $('#slideToggleBtn').click(function(){
 
-  $('#fadeToBtn').click(function(){
-
-    //$('#box').fadeTo( 2000, 0.2 );
-
-    $('#box').fadeTo(2000 , .2 ,function(){
-      console.log('Fade To');
-    });
+    $('#box').slideToggle();
 
   });
 
