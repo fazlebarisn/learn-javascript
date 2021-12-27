@@ -1,19 +1,28 @@
-#box{
+#main-outer{
     border: 1px solid #000;
-    /* background: pink; */
+    background: pink;
     padding: 10px;
     width: 500px;
-    height: 200px;
-    overflow: auto;
-    background: powderblue;
-    position: relative;
+    margin: 0 auto;
 }
 
-#box p{
+#outer{
+    border: 1px solid #000;
+    background: rgb(172, 202, 214);
     padding: 10px;
-    margin: 15px;
 }
 
-.tan{
-    background-color: tan;
+#inner{
+    border: 1px solid #000;
+    background: rgb(114, 141, 230);
+    padding: 10px;
+}
+
+#inner div{
+    border: 1px solid #000;
+    background: rgb(114, 230, 201);
+    padding: 10px;
+    width: 150px;
+    display: inline-flex;
+    /* float: left; */
 }
