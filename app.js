@@ -1,36 +1,27 @@
 $(document).ready(function(){
 
   // Slide  
-  $('#slideUpBtn').click(function(){
+  $('#animate').click(function(){
 
-    //$('#box').slideUp();
-    //$('#box').slideUp('slow');
-    //$('#box').slideUp(2000);
+    /*
+    $('#box').animate({
 
-    $('#box').slideUp(2000 , function(){
-      console.log('slide Up');
+      left : '150px',
+      width : '+=300px', // or '300px' or 'toggle' or 'hide' or 'show'
+      fontSize : '25px',
+      borderWidth : '5px'
+
+    });
+    */
+
+    $('#box').animate({left : '150px'});
+    $('#box').animate({top : '150px' , fontSize : '25px'});
+
+    $('#box').animate({width : '350px'} , 3000, function(){
+      console.log('done');
     });
 
   });
 
-  // FadeOut 
-  $('#slideDownBtn').click(function(){
-
-    $('#box').slideDown();
-    //$('#box h1').slideDown('slow');
-    //$('#box h1').slideDown(2000);
-
-    // $('#box h1').slideDown(2000 , function(){
-    //   console.log('slide Down');
-    // });
-
-  });
-
-  // Slide Toggle 
-  $('#slideToggleBtn').click(function(){
-
-    $('#box').slideToggle();
-
-  });
 
 });
