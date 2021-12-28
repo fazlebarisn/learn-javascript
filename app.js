@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
-  $('.box').on('click dblclick mouseover mouseout' , function(event){
-    $('h2').html('Event: ' + event.type);
+  $('.box').on('mousedown mouseover mouseout' , function(event){
+    $('h2').html(event.type + ' : ' + event.which);
+  })
+
+  $('#inputBox').on('keydown' , function(event){
+    $('h2').html(event.type + ' : ' + event.which);
   })
 
 });
