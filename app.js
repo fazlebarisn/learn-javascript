@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
-  $('p').each(function(i){
-
-    $(this).on('click' , {value:i} , function(event){
-      alert(event.data.value);
-    });
-
-  });
+  $('.clickMe').on('click' , function(){
+    $('.box').children('.plus, .minus').css('display' , 'none');
+  })
 
 });
