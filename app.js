@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
-  $('.box').on('click' , function(event){
+  $('#result').on('click' , function(event){
 
-    //$('h3').html('Target : ' + event.target);
-    //$('h3').html('Target : ' + event.target.nodeName);
-    $('h3').html('Target : ' + event.target.innerHTML);
+    event.preventDefault();
+
+    // check if preventDefault
+
+    var check = event.isDefaultPrevented();
+    $('h3').html(check);
 
   })
 
