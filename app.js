@@ -1,28 +1,24 @@
 $(document).ready(function(){
 
-  // first methord   
-  //$('p').first().css('background' , 'red' ); 
-  //$('#second p').first().css('background' , 'red' ); 
-  //$('ul li').first().css('background' , 'red' );
+  // has methord   
+  //$('p').has('span').css('background' , 'red' ); 
+  //$('p').has('b').css('background' , 'red' ); 
+  //$('p').has('b,span').css('background' , 'red' ); 
+  //$('p').has('.test').css('background' , 'red' ); 
 
-  // last selector
-  //$('p').last().css('background' , 'red' ); 
-  //$('#first p').last().css('background' , 'red' ); 
-  //$('ul li').last().css('background' , 'red' );
+  // is methord
+  // if( $('p').parent().is('div') ){
+  //   console.log( $('p').parent().is('div') );
+  // }
 
-  // eq selector
-  //$('ul li').eq(2).css('background' , 'red' );
-  //$('ul li').eq(-1).css('background' , 'red' ); // will select the last element
+  $('p').click(function(){
 
-  // filter
-  //$('p').filter('.test').css('background' , 'red' );
-  //$('p.test').css('background' , 'red' );
-
-  // not selector
-  //$('p').not('.test').css('background' , 'red' );
-
-  // slice
-  //$('ul li').slice(1).css('background' , 'red' ); // will tergate from index of 1
-  $('ul li').slice(1,3).css('background' , 'red' ); // will tergate from index of 1 to index of 3
+    if( $(this).parent().is('div') ){
+      $(this).css('background' , 'gold' );
+    }else{
+      $(this).css('background' , 'tan' );
+      
+    }
+  });
 
 });
