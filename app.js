@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
-  $('#first ul li').each(function(){
+  $(document).mousemove(function(event){
 
-    //console.log($(this).text());
-    var value = $(this).text();
-    $(this).text('Hello ' + value );
-    
+    $('#first').text('X:' + event.pageX + ' Y: ' + event.pageY);
+
+    let x = event.pageX;
+    let y = event.pageY;
+
+    $('.box').offset({top:x , left:y});
+
   })
 
 });

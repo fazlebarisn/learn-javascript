@@ -1,9 +1,12 @@
 #first{
     background: rgb(228, 155, 60);
     padding: 20px;
+    width: 500px;
+    height: 200px;
 }
 
-#second{
+.box{
     background-color: wheat;
-    padding: 20px;
+    width: 100px;
+    height: 100px;
 }
