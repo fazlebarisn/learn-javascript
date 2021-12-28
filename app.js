@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     event.stopPropagation();
     //alert("p is checked!");
-    alert("p is checked! " + event.isPropagationStopped() );
+    alert("p is checked! " + event.isPropagationStopped() ); // to check 
 
   });
 
