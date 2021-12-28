@@ -1,11 +1,23 @@
 $(document).ready(function(){
 
   $('.box').on('click' , function(event){
+    alert('div is checked!');
+  });
 
-    //$('h3').html('Target : ' + event.target);
-    //$('h3').html('Target : ' + event.target.nodeName);
-    $('h3').html('Target : ' + event.target.innerHTML);
+  $('h2').on('click' , function(event){
+    alert('h2 is checked!');
+  });
 
+  $('p').on('click' , function(event){
+
+    event.stopPropagation();
+    //alert("p is checked!");
+    alert("p is checked! " + event.isPropagationStopped() );
+
+  });
+
+  $('button').on('click' , function(event){
+    alert('button is checked!');
   })
 
 });
