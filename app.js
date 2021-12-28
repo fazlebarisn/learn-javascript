@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-  $('.box').on('mousedown mouseover mouseout' , function(event){
-    $('h2').html(event.type + ' : ' + event.which);
-  })
+  $('.box').on('click' , function(event){
 
-  $('#inputBox').on('keydown' , function(event){
-    $('h2').html(event.type + ' : ' + event.which);
+    //$('h3').html('Target : ' + event.target);
+    //$('h3').html('Target : ' + event.target.nodeName);
+    $('h3').html('Target : ' + event.target.innerHTML);
+
   })
 
 });
