@@ -1,10 +1,12 @@
 .box{
     background-color: wheat;
-    /* width: 500px;
-    height: 300px; */
+    width: 200px;
+    height: 100px;
     padding: 30px;
 }
 
-.red{
-    color: red;
+#form{
+    background-color: saddlebrown;
+    padding: 30px;
+    width: 400px;
 }

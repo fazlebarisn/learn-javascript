@@ -1,7 +1,17 @@
 $(document).ready(function(){
 
-  $('.clickMe').on('click' , function(){
-    $('.box').children('.plus, .minus').css('display' , 'none');
-  })
+  $('#add').click(function(){
+
+    let html = "<tr><td>Name</td><td><input type='text'><button id='remove'>Remove</button></td></tr>";
+    $('#tbl').append(html);
+    
+  });
+
+  $('#remove').click(function(){
+
+    alert(11111);
+    $('#remove').remove();
+
+  });
 
 });
