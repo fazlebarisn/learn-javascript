@@ -1,6 +1,7 @@
-function sleep(){
-  var x = 5;
-  console.log(x);
+let houre = 4;
+let min = 8;
+function sleep( h,s ){
+  document.getElementById("demo").innerHTML = "You have sleep over " + h + " Houre and " + s + " min";
 }
-console.log(x);
-sleep()
+sleep(houre,min);
+
