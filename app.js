@@ -1,22 +1,42 @@
-let houre = 4;
-let min = 8;
-function sleep( h,s ){
-  document.getElementById("demo").innerHTML = "You have sleep over " + h + " Houre and " + s + " min";
-}
-sleep(houre,min);
+//let me = 'Fazle Bari';
+//console.log(me.length);
+//let reselt = me.slice(6,10);
+//let reselt = me.slice(-10,-6);
+//let reselt = me.substr(1,9);
 
-function find_max(nums) {
-  let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
-  //console.log(nums);
-  for (let num of nums) {
-    if (num > max_num) {
-      // num = max_num;
-      //max_num += 1;
-      //max_num = num;
-      max_num += num;
-    }
-  }
-  return max_num;
-}
+let names = 'My name is Fazle Bari';
+//let reselt = names.replace('Bari','Huda');
+//let reselt = names.toLowerCase();
+//let reselt = names.toLocaleUpperCase();
+// let reselt = names.trim();
+// let reselt = names.split(' ');
 
-find_max([80, 90, 70]);
+const cars = ["Saab", "Volvo", "BMW", "Toyota"];
+cars.push("Farari");
+// const cars = [];
+//  cars[0] = 9;
+//  cars[1] = 90;
+//  cars[2] = 890;
+// let reselt = 0.2 + 0.1;
+
+//console.log( cars.length);
+//console.log( cars[cars.length -1] );
+//console.log( cars.sort());
+
+// for(i=0; i<cars.length; i++){
+//     console.log(cars[i]);
+// }
+
+// cars.forEach(myFunction);
+
+// function myFunction(val){
+//     console.log(val);
+// }
+
+const points = [40,100,1,5,25,10,1.5];
+points.sort();
+points.sort(function(a,b){
+    return a-b;
+})
+
+document.getElementById('demo').innerHTML = points;
