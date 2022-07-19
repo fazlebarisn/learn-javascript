@@ -100,17 +100,19 @@ cars.push("Farari");
 // result = [1, 2, 3, 4, 5, 7, 8, 9, 0]
 
 //var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-var filtered = array.filter(function(value, index, arr){ 
-    //console.log(value, index,arr );
+// var filtered = array.filter(function(value, index, arr){ 
+//     //console.log(value, index,arr );
 
-    //var numb = value.replace(/[^0-9]/g,'');
-    var numb = value.match(/\d/g);
-    parseInt(numb)
-    //console.log( numb);
-    return numb > 5;
-});
+//     //var numb = value.replace(/[^0-9]/g,'');
+//     var numb = value.match(/\d/g);
+//     parseInt(numb)
+//     console.log( numb);
+//     return numb > 5;
+// });
 
-console.log(filtered);
+let usersToString = JSON.stringify(array);
+var numb = usersToString.replace(/[^0-9]/g,'');
+console.log(numb);
 
 
 
